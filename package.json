@@ -1,5 +1,5 @@
 {
-  "name": "simple express app",
+  "name": "SimpleExpressApp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.3.3",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "express3-handlebars": "^0.5.2"
   }
 }

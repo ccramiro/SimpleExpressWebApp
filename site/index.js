@@ -1,11 +1,16 @@
 var express = require( 'express' );
 var app = express();
 
+// handlebars
+var handlebars = require( 'express3-handlebars' )
+   .create( { defaultLayout:'main' } )
+app.engine( 'handlebars', handlebars.engine );
+app.set( 'view engine', 'handlebars' );
+
 app.set( 'port', process.env.PORT || 8080 );
 
 app.get( '/', function( req, res ) {
-   res.type( 'text/plain' );
-   res.send( 'Starting with express' );
+   res.render( 'home' );
 });
 
 // custom 404 page
